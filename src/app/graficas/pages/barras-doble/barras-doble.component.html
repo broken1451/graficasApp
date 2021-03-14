@@ -1,0 +1,23 @@
+<h1>Graficas doble</h1>
+<hr />
+<div class="row">
+  <div class="col-md-6">
+    <app-grafica-barra
+      [barChartData]="proveedoresData"
+      [barChartLegend]="barChartLegend"
+      [barChartType]="barChartType"
+      [barChartOptions]="barChartOptions"
+      [barChartLabels]="barChartLabels"
+      [horizontal]="true"
+    ></app-grafica-barra>
+  </div>
+  <div class="col-md-6">
+    <app-grafica-barra
+      [barChartData]="barChartData"
+      [barChartLegend]="barChartLegend"
+      [barChartType]="barChartType"
+      [barChartOptions]="barChartOptions"
+      [barChartLabels]="barChartLabels"
+    ></app-grafica-barra>
+  </div>
+</div>
