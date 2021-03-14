@@ -43,6 +43,7 @@ export class DonaHttpComponent implements OnInit {
 
     this.graficaService.getUserRedesSociales().subscribe(({ labels, values }) => {
         this.doughnutChartLabels = labels;
+        // this.doughnutChartData = [values];
         this.doughnutChartData.push(values);
       });
   }
